@@ -11,10 +11,10 @@ import com.google.android.material.textfield.TextInputEditText;
 
 public class StudentInfoActivity extends AppCompatActivity {
 
-    private TextInputEditText input;
+    private TextInputEditText inputPredmet, inputProfesor, inputAkademskaGodina, inputSatiPredavanja, inputSatiLV;
     private Button button;
-    private String predmet;
-    private String sImePrezime;
+    private String predmet, imeProfesora, akademskaGodina, satiPredavanja, satiLV;
+    private String sIme, sPrezime, sDatum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,20 +22,36 @@ public class StudentInfoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_student_info);
 
         final Bundle oExtras = getIntent().getExtras();
-        sImePrezime = oExtras.getString("imePrezime");
+        sIme = oExtras.getString("ime");
+        sPrezime = oExtras.getString("prezime");
+        sDatum = oExtras.getString("datum");
 
         button=findViewById(R.id.buttonPredmet);
-        input=findViewById(R.id.textPredmet);
+        inputPredmet=findViewById(R.id.textPredmet);
+        inputProfesor=findViewById(R.id.textImeProfesora);
+        inputAkademskaGodina=findViewById(R.id.textAkademskaGodina);
+        inputSatiPredavanja=findViewById(R.id.textSatiPredavanja);
+        inputSatiLV=findViewById(R.id.textSatiLV);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                predmet = input.getText().toString();
+                predmet = inputPredmet.getText().toString();
+                imeProfesora = inputProfesor.getText().toString();
+                akademskaGodina = inputAkademskaGodina.getText().toString();
+                satiPredavanja = inputSatiPredavanja.getText().toString();
+                satiLV = inputSatiLV.getText().toString();
 
 
                 Intent intent = new Intent(getApplicationContext(), SummaryActivity.class);
                 intent.putExtra("predmet", predmet);
-                intent.putExtra("imePrezime", sImePrezime);
+                intent.putExtra("imeProfesora", imeProfesora);
+                intent.putExtra("akademskaGodina", akademskaGodina);
+                intent.putExtra("satiPredavanja", satiPredavanja);
+                intent.putExtra("satiLV", satiLV);
+                intent.putExtra("ime", sIme);
+                intent.putExtra("prezime", sPrezime);
+                intent.putExtra("datum", sDatum);
                 startActivity(intent);
             }
         });

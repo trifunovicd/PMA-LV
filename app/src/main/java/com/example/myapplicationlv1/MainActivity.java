@@ -13,9 +13,11 @@ import com.google.android.material.textfield.TextInputLayout;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextInputEditText input;
+    private TextInputEditText inputIme;
+    private TextInputEditText inputPrezime;
+    private EditText editDatum;
     private Button button;
-    private String ime_prezime;
+    private String ime, prezime, datum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,15 +25,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         button=findViewById(R.id.buttonImePrezime);
-        input=findViewById(R.id.textImePrezime);
+        inputIme=findViewById(R.id.textIme);
+        inputPrezime=findViewById(R.id.textPrezime);
+        editDatum=findViewById(R.id.editDatum);
+
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ime_prezime = input.getText().toString();
+                ime = inputIme.getText().toString();
+                prezime = inputPrezime.getText().toString();
+                datum = editDatum.getText().toString();
 
                 Intent intent = new Intent(getApplicationContext(), StudentInfoActivity.class);
-                intent.putExtra("imePrezime", ime_prezime);
+                intent.putExtra("ime", ime);
+                intent.putExtra("prezime", prezime);
+                intent.putExtra("datum", datum);
                 startActivity(intent);
             }
         });

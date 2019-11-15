@@ -7,25 +7,94 @@
     tools:context=".SummaryActivity">
 
     <TextView
-        android:id="@+id/textViewImePrezime"
-        android:layout_width="wrap_content"
+        android:id="@+id/textViewIme"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Ime"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPrezime"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="30dp"
-        android:textSize="20sp"/>
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textViewPrezime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Prezime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewIme"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textViewDatum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datum rođenja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewIme"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:gravity="center"/>
 
     <TextView
         android:id="@+id/textViewPredmet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Predmet"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewImePrezime"
-        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDatum"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textViewImePrezimeProfesora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ime i prezime profesora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPredmet"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textViewAkademskaGodina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Akademska godina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewImePrezimeProfesora"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textViewSatiPredavanja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sati predavanja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAkademskaGodina"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textViewSatiLV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sati LV-a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSatiPredavanja"
+        android:layout_marginTop="16dp"
         android:textSize="20sp"/>
 
     <Button
@@ -34,7 +103,7 @@
         android:layout_height="wrap_content"
         android:text="Vrati se"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPredmet"
-        android:layout_marginTop="30dp"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

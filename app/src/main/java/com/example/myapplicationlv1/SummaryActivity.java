@@ -10,11 +10,9 @@ import android.widget.TextView;
 
 public class SummaryActivity extends AppCompatActivity {
 
-    private TextView sImePrezime;
-    private TextView sPredmet;
+    private TextView sIme, sPrezime, sDatum, sPredmet, sImeProfesora, sAkademskaGodina, sSatiPredavanja, sSatiLV;
     private Button vrati_se;
-    private String imePrezime;
-    private String predmet;
+    private String ime, prezime, datum, predmet, imeProfesora, akademskaGodina, satiPredavanja, satiLV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,15 +20,34 @@ public class SummaryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_summary);
 
         final Bundle oExtras = getIntent().getExtras();
-        imePrezime = oExtras.getString("imePrezime");
+        ime = oExtras.getString("ime");
+        prezime = oExtras.getString("prezime");
+        datum = oExtras.getString("datum");
         predmet = oExtras.getString("predmet");
+        imeProfesora = oExtras.getString("imeProfesora");
+        akademskaGodina = oExtras.getString("akademskaGodina");
+        satiPredavanja = oExtras.getString("satiPredavanja");
+        satiLV = oExtras.getString("satiLV");
 
-        sImePrezime = findViewById(R.id.textViewImePrezime);
+
+        sIme = findViewById(R.id.textViewIme);
+        sPrezime = findViewById(R.id.textViewPrezime);
+        sDatum = findViewById(R.id.textViewDatum);
         sPredmet = findViewById(R.id.textViewPredmet);
+        sImeProfesora = findViewById(R.id.textViewImePrezimeProfesora);
+        sAkademskaGodina = findViewById(R.id.textViewAkademskaGodina);
+        sSatiPredavanja = findViewById(R.id.textViewSatiPredavanja);
+        sSatiLV = findViewById(R.id.textViewSatiLV);
         vrati_se = findViewById(R.id.buttonHome);
 
-        sImePrezime.setText(imePrezime);
+        sIme.setText(ime);
+        sPrezime.setText(prezime);
+        sDatum.setText(datum);
         sPredmet.setText(predmet);
+        sImeProfesora.setText(imeProfesora);
+        sAkademskaGodina.setText(akademskaGodina);
+        sSatiPredavanja.setText(satiPredavanja);
+        sSatiLV.setText(satiLV);
 
         vrati_se.setOnClickListener(new View.OnClickListener() {
             @Override

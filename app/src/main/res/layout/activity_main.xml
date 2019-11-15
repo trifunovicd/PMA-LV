@@ -6,21 +6,93 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_launcher_background"
+        android:id="@+id/image"
+        />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayoutImePrezime"
-        android:layout_width="match_parent"
+        android:id="@+id/textInputLayoutIme"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textInputLayoutPrezime"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textImePrezime"
+            android:id="@+id/textIme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ime i prezime" />
+            android:hint="Ime" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutPrezime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textInputLayoutIme"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textPrezime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prezime" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutIme"
+        android:id="@+id/line1"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textDatum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editDatum"
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editDatum"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Datum rođenja"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editDatum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textDatum"
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Unesite datum rođenja"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/editDatum"
+        android:id="@+id/line2"
+        android:layout_marginTop="16dp"
+        />
 
     <Button
         android:id="@+id/buttonImePrezime"
@@ -28,7 +100,7 @@
         android:layout_height="wrap_content"
         android:text="Uredu"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutImePrezime"
-        android:layout_marginTop="30dp"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
