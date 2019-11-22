@@ -52,8 +52,11 @@ public class SummaryActivity extends AppCompatActivity {
         vrati_se.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                MyDataStorage myDataStorage = MyDataStorage.getInstance();
+                Student student = new Student(ime,prezime,predmet);
+                myDataStorage.setStudents(student);
+                Intent intent = new Intent(getApplicationContext(), PocetniActivity.class);
+               // intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
         });
