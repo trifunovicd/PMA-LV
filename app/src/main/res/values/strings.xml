@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">My Application LV1</string>
+    <string name="ime">Ime</string>
+    <string name="prezime">Prezime</string>
+    <string name="datum_rodenja">Datum rođenja</string>
+    <string name="unesite_datum_rodenja">Unesite datum rođenja</string>
+    <string name="uredu">Uredu</string>
+    <string name="dodaj_korisnika">Dodaj korisnika</string>
+    <string name="unesite_predmet">Unesite predmet</string>
+    <string name="unesite_ime_i_prezime_profesora">Unesite ime i prezime profesora</string>
+    <string name="unesite_akademsku_godinu">Unesite akademsku godinu</string>
+    <string name="unesite_sate_predavanja">Unesite sate predavanja</string>
+    <string name="unesite_sate_lv_a">Unesite sate LV-a</string>
+    <string name="predmet">Predmet</string>
+    <string name="ime_i_prezime_profesora">Ime i prezime profesora</string>
+    <string name="akademska_godina">Akademska godina</string>
+    <string name="sati_predavanja">Sati predavanja</string>
+    <string name="sati_lv_a">Sati LV-a</string>
+    <string name="vrati_se">Vrati se</string>
+
+    <string-array name="languages">
+        <item>Odaberite jezik</item>
+        <item>Hrvatski</item>
+        <item>Engleski</item>
+        <item>Mađarski</item>
+    </string-array>
 </resources>

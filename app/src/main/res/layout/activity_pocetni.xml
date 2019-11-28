@@ -22,15 +22,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@+id/spinner"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="dodaj korisnika"/>
+        android:text="@string/dodaj_korisnika"/>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/spinner"
-        android:layout_marginTop="30dp"/>
-
+        android:layout_marginTop="30dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,9 +15,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
    private MyDataStorage storage = MyDataStorage.getInstance();
    private List<Student> studenti = storage.getStudents();
 
-    public RecyclerViewAdapter(PocetniActivity pocetniActivity) {
-    }
-
     @NonNull
     @Override
     public StudentHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

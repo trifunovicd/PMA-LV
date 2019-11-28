@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application LV1</string>
+    <string name="akademska_godina">Tanév</string>
+    <string name="datum_rodenja">Születési dátum</string>
+    <string name="dodaj_korisnika">Felhasználó hozzáadása</string>
+    <string name="ime">Név</string>
+    <string name="ime_i_prezime_profesora">A professzor neve</string>
+    <string name="predmet">Tantárgy</string>
+    <string name="prezime">Vezetéknév</string>
+    <string name="sati_lv_a">Órák LG</string>
+    <string name="sati_predavanja">Osztályórák</string>
+    <string name="unesite_akademsku_godinu">Írja be a tanévet</string>
+    <string name="unesite_datum_rodenja">Írja be a születési dátumát</string>
+    <string name="unesite_ime_i_prezime_profesora">Írja be a professzor vezetéknevét és vezetéknevét</string>
+    <string name="unesite_predmet">Írja be a tárgyat</string>
+    <string name="unesite_sate_lv_a">Adja meg az LG órákat</string>
+    <string name="unesite_sate_predavanja">Adja meg az óra óráját</string>
+    <string name="uredu">Oké</string>
+    <string name="vrati_se">Menjen vissza</string>
+
+    <string-array name="languages">
+        <item>Válassza ki a nyelvet</item>
+        <item>Horvát</item>
+        <item>Angol</item>
+        <item>Magyar</item>
+    </string-array>
+</resources>

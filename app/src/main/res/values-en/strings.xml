@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application LV1</string>
+    <string name="akademska_godina">Academic year</string>
+    <string name="dodaj_korisnika">Add user</string>
+    <string name="datum_rodenja">Date of birth</string>
+    <string name="ime">Name</string>
+    <string name="ime_i_prezime_profesora">Name of the professor</string>
+    <string name="predmet">Subject</string>
+    <string name="prezime">Surname</string>
+    <string name="sati_lv_a">Hours of LE</string>
+    <string name="sati_predavanja">Class hours</string>
+    <string name="unesite_akademsku_godinu">Enter the academic year</string>
+    <string name="unesite_datum_rodenja">Enter your date of birth</string>
+    <string name="unesite_ime_i_prezime_profesora">Enter the professor\'s first and last name</string>
+    <string name="unesite_predmet">Enter a subject</string>
+    <string name="unesite_sate_lv_a">Enter LE hours</string>
+    <string name="unesite_sate_predavanja">Enter the class hours</string>
+    <string name="uredu">Okay</string>
+    <string name="vrati_se">Go back</string>
+
+    <string-array name="languages">
+        <item>Choose your language</item>
+        <item>Croatian</item>
+        <item>English</item>
+        <item>Hungarian</item>
+    </string-array>
+</resources>

@@ -3,18 +3,18 @@ package com.example.myapplicationlv1;
 public class Student {
     private String ime;
     private String prezime;
-    private String datum_rodenja;
+    //private String datum_rodenja;
     private String predmet;
    /* private String imePrezimeProfesora;
     private String akademskaGodina;
     private Integer satiPredavanja;
     private Integer satiLV;*/
 
-    public Student(String ime, String prezime,String predmet){/* String datum_rodenja, String predmet/*, String imePrezimeProfesora, String akademskaGodina, Integer satiPredavanja, Integer satiLV) {
+    public Student(String ime, String prezime,/* String datum_rodenja,*/ String predmet/*, String imePrezimeProfesora, String akademskaGodina, Integer satiPredavanja, Integer satiLV*/) {
         this.ime = ime;
         this.prezime = prezime;
-        this.datum_rodenja = datum_rodenja;/*
-        this.predmet = predmet;
+        //this.datum_rodenja = datum_rodenja;
+        this.predmet = predmet;/*
         this.imePrezimeProfesora = imePrezimeProfesora;
         this.akademskaGodina = akademskaGodina;
         this.satiPredavanja = satiPredavanja;

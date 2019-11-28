@@ -22,7 +22,7 @@
             android:id="@+id/textPredmet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Unesite predmet" />
+            android:hint="@string/unesite_predmet" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -40,7 +40,7 @@
             android:id="@+id/textImeProfesora"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Unesite ime i prezime profesora" />
+            android:hint="@string/unesite_ime_i_prezime_profesora" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -58,7 +58,7 @@
             android:id="@+id/textAkademskaGodina"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Unesite akademsku godinu" />
+            android:hint="@string/unesite_akademsku_godinu" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -76,7 +76,8 @@
             android:id="@+id/textSatiPredavanja"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Unesite sate predavanja" />
+            android:hint="@string/unesite_sate_predavanja"
+            android:inputType="number"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -94,14 +95,15 @@
             android:id="@+id/textSatiLV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Unesite sate LV-a" />
+            android:hint="@string/unesite_sate_lv_a"
+            android:inputType="number"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/buttonPredmet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Uredu"
+        android:text="@string/uredu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginRight="16dp"
