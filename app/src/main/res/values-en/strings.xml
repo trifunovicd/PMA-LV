@@ -18,11 +18,13 @@
     <string name="unesite_sate_predavanja">Enter the class hours</string>
     <string name="uredu">Okay</string>
     <string name="vrati_se">Go back</string>
+    <string name="studenti">Students</string>
 
     <string-array name="languages">
-        <item>Choose your language</item>
-        <item>Croatian</item>
-        <item>English</item>
-        <item>Hungarian</item>
-    </string-array>
-</resources>
+         <item>Choose your language</item>
+         <item>Croatian</item>
+         <item>English</item>
+         <item>Hungarian</item>
+     </string-array>
+
+ </resources>

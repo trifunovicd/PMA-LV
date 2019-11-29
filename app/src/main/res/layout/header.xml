@@ -4,18 +4,10 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/studenti_ime_prezime"
+        android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:text="@string/ime"/>
-
-    <TextView
-        android:id="@+id/predmet"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:text="@string/predmet"/>
+        android:textSize="20sp"/>
 
     <View
         android:layout_width="match_parent"

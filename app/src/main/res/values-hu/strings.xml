@@ -18,11 +18,13 @@
     <string name="unesite_sate_predavanja">Adja meg az óra óráját</string>
     <string name="uredu">Oké</string>
     <string name="vrati_se">Menjen vissza</string>
+    <string name="studenti">Diákok</string>
 
     <string-array name="languages">
-        <item>Válassza ki a nyelvet</item>
-        <item>Horvát</item>
-        <item>Angol</item>
-        <item>Magyar</item>
-    </string-array>
-</resources>
+         <item>Válassza ki a nyelvet</item>
+         <item>Horvát</item>
+         <item>Angol</item>
+         <item>Magyar</item>
+     </string-array>
+
+ </resources>

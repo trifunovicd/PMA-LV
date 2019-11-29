@@ -17,6 +17,7 @@
     <string name="sati_predavanja">Sati predavanja</string>
     <string name="sati_lv_a">Sati LV-a</string>
     <string name="vrati_se">Vrati se</string>
+    <string name="studenti">Studenti</string>
 
     <string-array name="languages">
         <item>Odaberite jezik</item>
@@ -24,4 +25,5 @@
         <item>Engleski</item>
         <item>Mađarski</item>
     </string-array>
+
 </resources>

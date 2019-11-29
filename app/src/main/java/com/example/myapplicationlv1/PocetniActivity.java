@@ -19,6 +19,7 @@ import java.util.Locale;
 public class PocetniActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private Button dodajStudenta;
     private Spinner spinner;
+    private boolean userIsInteracting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,35 +53,39 @@ public class PocetniActivity extends AppCompatActivity implements AdapterView.On
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        String lang = new String();
-        switch (spinner.getSelectedItemPosition()){
-            case 1:
-                lang = "hr";
-                break;
-            case 2:
-                lang = "en";
-                break;
-            case 3:
-                lang = "hu";
-                break;
-            default:
-                lang = "select";
-                return;
-        }
 
-        if(!lang.matches("select")){
-            Locale locale = new Locale(lang);
-            Locale.setDefault(locale);
-            Configuration config = getBaseContext().getResources().getConfiguration();
-            config.locale = locale;
-            getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
-            //recreate
+        if (userIsInteracting) {
+            switch (spinner.getSelectedItemPosition()){
+                case 1:
+                    changeLanguage("hr");
+                    break;
+                case 2:
+                    changeLanguage("en");
+                    break;
+                case 3:
+                    changeLanguage("hu");
+                    break;
+            }
         }
-
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
 
+    }
+
+    private void changeLanguage(String lang){
+        Locale locale = new Locale(lang);
+        Locale.setDefault(locale);
+        Configuration config = getBaseContext().getResources().getConfiguration();
+        config.locale = locale;
+        getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+        recreate();
+    }
+
+    @Override
+    public void onUserInteraction() {
+        super.onUserInteraction();
+        userIsInteracting = true;
     }
 }
