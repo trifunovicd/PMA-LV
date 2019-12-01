@@ -1,4 +1,4 @@
-package com.example.myapplicationlv1;
+package com.example.myapplicationlv1.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +10,10 @@ import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.myapplicationlv1.models.MyDataStorage;
+import com.example.myapplicationlv1.R;
+import com.example.myapplicationlv1.models.Student;
+
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private static final int TYPE_HEAD = 0;
     private static final int TYPE_LIST = 1;
@@ -20,7 +24,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         if(viewType == TYPE_HEAD){
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.header, parent, false);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.header_layout, parent, false);
             HeaderHolder headerHolder = new HeaderHolder(view);
             return headerHolder;
         }

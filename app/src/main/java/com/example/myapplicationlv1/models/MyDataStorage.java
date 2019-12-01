@@ -1,4 +1,4 @@
-package com.example.myapplicationlv1;
+package com.example.myapplicationlv1.models;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,9 +10,9 @@ public class MyDataStorage {
         this.students = new ArrayList<>();
     }
 
-    static private MyDataStorage instance;
+    private static MyDataStorage instance;
 
-    static MyDataStorage getInstance(){
+    public static MyDataStorage getInstance(){
         if(instance==null)
         {
             instance = new MyDataStorage();

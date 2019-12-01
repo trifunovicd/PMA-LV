@@ -1,10 +1,13 @@
-package com.example.myapplicationlv1;
-
+package com.example.myapplicationlv1.adapters;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+
+import com.example.myapplicationlv1.fragments.PersonalInfoFragment;
+import com.example.myapplicationlv1.fragments.StudentInfoFragment;
+import com.example.myapplicationlv1.fragments.SummaryFragment;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 

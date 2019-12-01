@@ -1,4 +1,4 @@
-package com.example.myapplicationlv1;
+package com.example.myapplicationlv1.models;
 
 public class Student {
     private String ime;
