@@ -6,8 +6,8 @@
     android:layout_height="match_parent">
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayoutPredmet"
+    <Spinner
+        android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -15,14 +15,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textPredmet"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/unesite_predmet" />
-    </com.google.android.material.textfield.TextInputLayout>
+        android:layout_marginTop="16dp"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayoutImeProfesora"
@@ -30,7 +23,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPredmet"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp">
