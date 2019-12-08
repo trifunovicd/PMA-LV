@@ -5,9 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinnerPredmet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -17,23 +16,16 @@
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayoutImeProfesora"
+    <Spinner
+        android:id="@+id/spinnerProfesor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPredmet"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textImeProfesora"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/unesite_ime_i_prezime_profesora" />
-    </com.google.android.material.textfield.TextInputLayout>
+        android:layout_marginTop="16dp"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayoutAkademskaGodina"
@@ -41,7 +33,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutImeProfesora"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerProfesor"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp">
@@ -50,7 +42,8 @@
             android:id="@+id/textAkademskaGodina"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/unesite_akademsku_godinu" />
+            android:hint="@string/unesite_akademsku_godinu"
+            android:inputType="number"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
